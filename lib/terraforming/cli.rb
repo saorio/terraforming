@@ -145,6 +145,16 @@ module Terraforming
       execute(Terraforming::Resource::NetworkACL, options)
     end
 
+    desc "opwcl", "OpsWorks Custom Layer"
+    def opwcl
+      execute(Terraforming::Resource::OpsWorksCustomLayer, options)
+    end
+
+    desc "opws", "OpsWorks Stack"
+    def opws
+      execute(Terraforming::Resource::OpsWorksStack, options)
+    end
+
     desc "nat", "NAT Gateway"
     def nat
       execute(Terraforming::Resource::NATGateway, options)
